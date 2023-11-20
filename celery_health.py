@@ -1,6 +1,6 @@
 from celery import Celery
 
-app = Celery('your_project_name')
+app = Celery('NSpace')
 
 def check_celery_worker_health():
     try:
@@ -14,3 +14,22 @@ def check_celery_worker_health():
         print(f"Error checking Celery Worker health: {e}")
 
 check_celery_worker_health()
+
+
+"""
+
+This are the states can be used 
+
+PENDING: 
+STARTED: 
+SUCCESS: 
+FAILURE: 
+REVOKED: 
+RETRY: 
+IGNORED: 
+RECEIVED: 
+REJECTED: 
+RECOVERED:
+UNKNOWN: 
+
+"""   
