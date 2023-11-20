@@ -4,7 +4,7 @@ def check_uwsgi_health():
     try:
         response = requests.get('http://localhost:5000')
         if response.status_code == 200:
-            print("healthy")
+            print(f"healthy {response.status_code}")
         else:
             print(f"uwsgi is unhealthy. Status Code: {response.status_code}")
     except Exception as e:
